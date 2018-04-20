@@ -29,7 +29,9 @@
     "build": "webpack",
     "docs": "./bin/docs.sh"
   },
-  "dependencies": {},
+  "dependencies": {
+    "babel-polyfill": "^6.26.0"
+  },
   "devDependencies": {
     "babel-core": "^6.3.21",
     "babel-loader": "^6.2.0",

@@ -7,6 +7,7 @@ import Parser from './Parser';
 import treeTypes from './treeTypes';
 import nodeRenderers from './nodeRenderers';
 import * as utils from './utils';
+import 'babel-polyfill';
 
 function decorate(object, fnName, fn) {
   const target = object[fnName] ? object : object.prototype;

@@ -19,7 +19,7 @@ const uglifyPlugin = new webpack.optimize.UglifyJsPlugin({
 function config(options) {
   return {
     context: path.join(__dirname, 'src'),
-    entry: './index',
+    entry: ['babel-polyfill', './index'],
     output: {
       path: path.join(__dirname, 'dist'),
       publicPath: '/dist/',
